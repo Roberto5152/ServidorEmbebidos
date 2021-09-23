@@ -18,11 +18,6 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-
-
-
-
-
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
   
@@ -47,9 +42,9 @@ function LED1_Off(){
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("stalyn64sampedro@yahoo.es/t2");
+    client.subscribe("stalyn64sampedro@yahoo.es/t1");
     message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "stalyn64sampedro@yahoo.es/t1";
+    message.destinationName = "stalyn64sampedro@yahoo.es/t2";
     client.send(message);
 	
   }

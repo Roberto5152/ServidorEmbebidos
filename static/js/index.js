@@ -68,7 +68,7 @@ function LED1_Off(){
     console.log("onMessageArrived:"+message.payloadString);
     var MensajeRecibido=message.payloadString;
 
-    if MensajeRecibido==('111'){
+    if (MensajeRecibido==("111")){
       document.getElementById("recibido").innerHTML='Conectado a la ESP32.';
     }
 

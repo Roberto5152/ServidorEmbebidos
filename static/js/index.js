@@ -67,7 +67,7 @@ function LED1_Off(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
     var MensajeRecibido=message.payloadString;
-    var Sensores=MensajeRecibido.split(" ",1
+    var Sensores=MensajeRecibido.split(" ",1);
     document.getElementById("Actual").innerHTML=MensajeRecibido;
 	  document.getElementById("sensor").innerHTML=Sensores[0];
     document.getElementById("sensor2").innerHTML=Sensores[1];

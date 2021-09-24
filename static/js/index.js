@@ -61,9 +61,15 @@ function LED1_Off(){
     }
   }
 
+
+
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  document.getElementById("sensor").innerHTML=message.payloadString;
+    var MensajeRecibido=message.payloadString;
+    var Sensores=MensajeRecibido.split(" ",1)
+
+	  document.getElementById("sensor").innerHTML=Sensores[0];
+    document.getElementById("sensor2").innerHTML=Sensores[1];
   }
   
